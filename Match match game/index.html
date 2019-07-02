@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Match match game</title>
+  <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+  <header></header>
+  <main>
+    <div id="rules_div" class="wrapper rules">
+      <div class="content">
+        <h1>Match match game</h1>
+        <h3>How to play:</h3>
+        <p>Memory is a counter game where the object is to find pairs.</p>
+        <p>Whe the game begins, all pictures are hidden.</p>
+        <h3>To play:</h3>
+        <div class="list">
+          <ol>
+              <li>Select two cards to try to match the pictures;</li>
+              <li>If you match the pictures you can go again;</li>
+              <li>If they don't match it is the computer turn them;</li>
+              <li>The player that finds all pairs wins.</li>
+          </ol>
+        </div>
+        <a id="close_rules_button" class="close-rules-button">Let's go!</a>
+      </div>
+    </div>
+    <div id="settings_field_div" class="wrapper settings-field">
+      <div class="content">
+        <h2>Choose your settings:</h2>
+        <form action=''>
+          <p>
+            <label for="first_name">First name: </label>
+            <input type="text" id="first_name" name="First name" placeholder="First name">
+          </p>
+          <p>
+            <label for="last_name">Last name: </label>
+            <input type="text" id="last_name" name="Last name" placeholder="Last name">
+          </p>
+          <p>
+            <label for="email">Email name: </label>
+            <input type="email" id="email" placeholder="sophie@example.com">
+          </p>
+          <h3>Shirt Cards: </h3>
+          <p>
+            <input type="radio" name="shirt" value="memes" />
+            <img src="img/memes/shirt.jpg" alt="Memes">
+            <input type="radio" name="shirt" value="languages"/>
+            <img src="img/languages/shirt.png" alt="Languages">
+            <input type="radio" name="shirt" value="different" checked/>
+            <img src="img/different/shirt.png" alt="Different">
+          </p>
+          <h3>Game difficulty: </h3>
+          <p>
+            <input type="radio" name="difficulty" value="6" />Low (6 cards)<br />
+            <input type="radio" name="difficulty" value="18" checked/>Medium (18 cards)<br />
+            <input type="radio" name="difficulty" value="36" />Hight (36 cards)<br />
+          </p>
+          <p id="attention" class="attention"></p>
+          <input id="start_game_button" class="start-game-button" type="button" value="Start game" />
+        </form>
+      </div>
+    </div>
+    <div id="game_field" class="wrapper game-field"></div>
+    <div id="final" class="wrapper final">
+      <h2 id="final_caption"></h2>
+      <div id="table_of_records" class="table-of-records">
+        <table id="table" class="table">
+        </table>
+      </div>
+      <a id="final_button" class="final-button">Do you want to play again?</a>
+    </div>
+  </main>
+  <footer></footer>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
