@@ -1,0 +1,127 @@
+CSS QD
+
+#1
+
+<header>
+<main>
++ <div></div>
+</main>
+</header>
+
+Answer: div
+
+#2 
+
+<header>
+<main>
++ <article></article>
+</main>
+</header>
+
+Answer: article
+
+#3
+
+<div class="glass door"></div>
+<div class="cellar">
+	<div class="door">
++		<div class="behind cellar door"></div>
+		<span class="jar of pickles"></span>
+	</div>
+</div>
++ <div class="door cellar"></div>
+<div class="little cellar"></div>
+
+Answer: .cellar.door
+
+#4
+
+<article>
++	<div></div>
++	<span></span>
++	<p></p>
++	<a></a>
+</article>
+
+Answer: article *
+
+#5
+
+<div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div class="class"></div>
++	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+(My computer shut down and I do not remember the right class and limitations)
+Answer???: div:nth-child(6)
+Answer???: .class + div
+
+#6
+
+<main>
+	<input type="text" />
+	<input type="number" />
++	<input type="checkbox" checked />
+	<input type="checkbox" />
+	<input type="text" />
+</main>
+
+Answer: :checked
+
+#7
+
+<ul>
+	<li></li>
++	<li></li>
+	<li></li>
++	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+
+Answer: :nth-child(-2n+4)
+Answer: :nth-child(2), :nth-child(4)
+
+#8
+
+I do not remember =(
+
+#9
+
+<div>
+	<div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<div>
++								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+Answer: :empty
+
+#10
+
++ <div data-attr="c s s"></div>
++ <span data-attr="j s"></div>
+<div data-attr="x m l"></div>
+<div data-attr="soap"></div>
++ <div data-attr="j s o n"></div>
+
+Answer: [data-attr+=" s"]
