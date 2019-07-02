@@ -1,0 +1,613 @@
+@font-face {
+    font-family: "Europe";
+    src: url("../fonts/Europe.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Good Vibes";
+    src: url("../fonts/GoodVibesCyr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	width: 1000px;
+	display: flex;
+}
+
+body {
+	position: relative;
+	background-color: #0d0d0f;
+	font-family: "Europe";
+}
+
+header {
+	width: 100%;
+	height: 785px;
+	max-height: 785px;
+}
+
+.animation {
+	width: 100%;
+	height: 100vh;
+	max-height: 785px;
+}
+
+@keyframes move {
+	100% {
+		background-position: -5000px 0;
+	}
+}
+
+.animation-bg-container {
+	background: url('../img/animation/bg1.jpg') repeat-x;
+	background-size: cover;
+	background-position: center top;
+	height: 50%;
+	max-height: 390px;
+	will-change: background-position;
+	position: absolute;
+    width: 100%;
+    top: 200px;
+    max-height: 350px;
+
+	animation-name: move;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 50s;
+	animation-direction: normal;
+}
+
+@keyframes bounce {
+	100% {
+		top: -5px;
+	}
+}
+
+.animation-overlay-container {
+	background: url('../img/animation/overlay.png') repeat-x;
+	background-size: auto;
+	background-position: center top;
+	height: 100%;
+	max-height: 785px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	animation-name: bounce;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-direction: alternate;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-content {
+	flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+}
+
+.nav-content a {
+	color: #1b4486;
+	transition: 1s;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.nav-content a:hover {
+	color: #bf272f;
+}
+
+main {}
+
+.info-section {
+	display: flex;
+    justify-content: center;
+    height: 100vh;
+    max-height: 785px;
+}
+
+.info-content {
+	align-items: center;
+	position: relative;
+}
+
+.info-content .info-ticket-bg {
+	height: 397px;
+	width: 570px;
+	padding-bottom: 100px;
+}
+
+.info-form {
+	position: absolute;
+    display: flex;
+    width: 43%;
+    right: 20%;
+    margin: 100px 0 0 0;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fdfeff;
+    text-align: center;
+}
+
+h1 {
+	line-height: 60px;
+}
+
+.info-form h2 {
+	line-height: 60px;
+	color: #1b4486;
+	font-family: "Good Vibes";
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.info-form p {
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+.info-form a {
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid #1b4486;
+	margin: 0 auto;
+	color: #1b4486;
+	transition: 1s;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.info-form a:hover {
+	background-color: #1b4486;
+	border: 2px solid #bf272f;
+	color: #bf272f;
+	background-color: transparent;
+}
+
+.info-companies {
+	position: relative;
+    width: 260px;
+    padding: 0 0 120px 120px;
+}
+
+.info-companies a {
+	position: absolute;
+    left: 190px;
+    cursor: pointer;
+}
+
+.info-companies .logo-imaguru-link {
+    top: 115px;
+}
+
+.info-companies .logo-liaa-link {
+    top: 60px;
+}
+
+.logo-imaguru-img {
+	width: 120px;
+}
+
+.logo-liaa-img {
+	width: 125px;
+}
+
+.description-section {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 785px;
+    background-color: #fdfeff;
+}
+
+.description-content {
+	align-items: center;
+}
+
+.description-section img {
+	width: 540px;
+	height: 550px;
+}
+
+.description-section p {
+	line-height: 24px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	text-align: justify;
+}
+
+.description-section p:last-child {
+	width: 73%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.description-section span {
+	color: #bf272f;
+	font-family: "Good Vibes";
+	font-size: 40px;
+}
+
+.description-section p:last-child span {
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.map-section {
+	width: 100%;
+	height: 100vh;
+	max-height: 785px;
+}
+
+.map-section iframe {
+	width: 100%;
+    height: 100%;
+}
+
+.agenda-section {
+	width: 100%;
+	height: 100vh;
+	max-height: 785px;
+	background: url('../img/agenda/bg.png') repeat;
+	display: flex;
+    justify-content: center;
+}
+
+.agenda-content {
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.agenda-content section:not(last-child) {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	padding: 50px;
+	width: 50%;
+	color: #fdfeff;
+}
+
+.agenda-content section:nth-child(1) {
+	top: 30px;
+	left: 0;
+}
+
+.agenda-content section:nth-child(2) {
+	top: 350px;
+	left: 0;
+}
+
+.agenda-content section:last-child {
+	background: url('../img/agenda/ticket.png') no-repeat;
+	background-size: contain;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 155px;
+	color: #0d0d0f;
+}
+
+.agenda-content section h3 {
+	text-align: center;
+	font-family: "Good Vibes";
+	font-size: 40px;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+
+.agenda-content section {
+	line-height: 20px;
+}
+
+.agenda-content section:last-child p {
+	padding-left: 50px;
+}
+
+.mentors-section {
+	width: 100%;
+	height: 100vh;
+	max-height: 785px;
+	background-color: #fdfeff;
+	display: flex;
+    justify-content: center;
+}
+
+.mentors-content {
+	flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.mentors-content section {
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mentors-content section img {
+	width: 100px;
+	height: 100px;
+	border: 3px solid #fdfeff;
+	border-radius: 100px;
+	position: relative;
+}
+
+.mentors-content .avatar {
+	width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@keyframes test-spin {
+	100% {
+		transform:rotate(360deg)
+	}
+}
+
+.mentors-content .avatar:before {
+	background: url('../img/mentors/star.svg') no-repeat;
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    left: 0;
+    animation: test-spin 15s linear infinite;
+}
+
+.mentors-content h3 {
+	font-family: "Good Vibes";
+	font-size: 40px;
+	line-height: 40px;
+	color: #1b4486;
+	padding-bottom: 20px;
+	font-weight: normal;
+}
+
+.mentors-content a {
+	text-transform: uppercase;
+	color: #0d0d0f;
+	font-weight: bold;
+	transition: 1s;
+}
+
+.mentors-content a:hover {
+	cursor: pointer;
+	color: #1b4486;
+}
+
+.photos-section {
+	width: 100%;
+	height: 760px;
+	display: flex;
+    justify-content: center;
+    background-color: #513726;
+}
+
+.photos-content {
+	overflow: hidden;
+	display: flex;
+    justify-content: center;
+}
+
+.gallery {
+	display: flex;
+    flex-direction: row;
+    width: 560px;
+    position: relative;
+}
+
+@keyframes slider {
+	100% {
+		transform: translateX(-6720px);
+	}
+}
+
+.gallery-content {
+	position: absolute;
+	display: flex;
+    flex-direction: row;
+    animation: slider 60s steps(12, end) infinite;
+}
+
+.gallery img {
+	width: 560px;
+	height: 375px;
+	margin-top: 120px;
+}
+
+.photos-content .overlay {
+	position: absolute;
+}
+
+.faq-section {
+	width: 100%;
+	height: 100vh;
+	max-height: 785px;
+	background-color: #513726;
+	display: flex;
+    justify-content: center;
+}
+
+.faq-content {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.faq-content h2 {
+	position: absolute;
+    top: 110px;
+    font-family: "Good Vibes";
+    font-size: 100px;
+    line-height: 80px;
+    font-weight: normal;
+    color: #bf272f;
+}
+
+.section-container {
+	background: url('../img/faq/bg.jpg') repeat;
+	box-shadow: inset 0px 0px 30px #513726;
+	width: 80%;
+	height: 60%;
+	margin-top: 100px;
+}
+
+.section-container section {
+	height: 25%;
+	display: flex;
+	align-items: center;
+}
+
+.section-container h4 {
+	text-transform: uppercase;
+	text-align: center;
+	width: 40%;
+	padding: 15px;
+	border-right: 3px solid #bf272f;
+}
+
+.section-container p {
+	padding: 15px;
+}
+
+.partners-section {
+	width: 100%;
+	min-height: 1100px;
+	max-height: 785px;
+	background-color: #fdfeff;
+	display: flex;
+    justify-content: center;
+}
+
+.partners-section img {
+	width: 100px;
+}
+
+.partners-content {
+	justify-content: center;
+	flex-direction: column;
+    align-items: center;
+}
+
+.partners-content h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-content section:nth-child(1) h2 {
+	background: url('../img/partners/ticket1.png') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.partners-content section:nth-child(2) h2 {
+	background: url('../img/partners/ticket2.png') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.partners-content section:nth-child(3) h2 {
+	background: url('../img/partners/ticket3.png') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.partners-content section:nth-child(4) h2 {
+	background: url('../img/partners/ticket4.png') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.partners-container {
+	width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.partners-container section {
+	width: 50%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.partners-container ul {
+	list-style-type: none;
+	display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.partners-container li {
+	padding: 0 20px 20px 20px;
+	cursor: pointer;
+}
+
+
+footer {
+	height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fdfeff;
+}
+
+footer a {
+	color: #bf272f;
+	font-family: "Good Vibes";
+	font-size: 30px;
+	transition: 1s;
+}
+
+footer a:hover {
+	color: #1b4486;
+}

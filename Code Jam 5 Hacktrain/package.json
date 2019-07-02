@@ -1,0 +1,15 @@
+{
+  "name": "hacktrain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "surge": "^0.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nika Neider",
+  "license": "ISC"
+}
