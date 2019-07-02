@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Europe";
+    src: url("../fonts/Europe.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Good Vibes";
+    src: url("../fonts/GoodVibesCyr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #ffe5ea;
+	background: linear-gradient(to bottom, #ffe5ea, #fff);
+}
+
+main {
+	font-family: 'Europe', sans-serif;
+	min-height: calc(100vh);
+	display: flex;
+  color: #fffcfc;
+}
+
+main .container {
+	background-color: #7f7275;
+	color: #fffcfc;
+	font-size: 16px;
+	line-height: 22px;
+	box-shadow: 0 0 20px #7f7275;
+	border-radius: 40px;
+	min-height: 200px;
+	max-height: 500px;
+	width: 500px;
+	margin: auto;
+	padding: 30px;
+	text-align: justify;
+}
+
+main .content {
+  overflow: hidden;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+h1 {
+  font-family: 'Good Vibes', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.content  blockquote {
+  padding: 20px 40px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.content p {
+  margin-bottom: 10px;
+}
+
+main .notification {
+  display: none;
+  height: 230px;
+  width: 330px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color:#7f7275;
+	box-shadow: -5px 5px 20px -5px #7f7275;
+	border-radius: 0 0 0 40px;
+  margin: 10px 10px 0 0;
+}
+
+
+.notification i.fa-times {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  transition: 1s;
+  font-size: 22px;
+}
+
+.notification i.fa-times:hover {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.notification .notesCollection {
+  width: 275px;
+  height: 185px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.notification .note {
+  width: 230px;
+  height: 140px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+  border: 2px solid #ffe5ea;
+  display: none;
+}
+
+.notesCollection .active {
+  display: block;
+}
+
+.note h2 {
+  height: 35px;
+  line-height: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.note .noteContent {
+  line-height: 20px;
+  text-align: justify;
+  max-height: 140px;
+  overflow: hidden;
+}
+
+.noteDisable {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  height: 20px;
+  width: 120px;
+}
+
+.notification label {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.notification input {
+  margin: 0 5px 3px 5px;
+}
+
+.notification label:hover {
+  color: #ffe5ea;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.carousel {
+  display: inline-block;
+  width: 180px;
+}
+
+.arrow {
+  text-decoration: none;
+  color: #fffcfc;
+  transition: 1s;
+  padding: 5px;
+}
+
+.arrow:hover {
+  color: #ffe5ea;
+}
+
+.dotContainer {
+  display: inline-block;
+}
+
+.dotList {
+
+}
+
+.dot {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 10px;
+}
+
+.active {
+  color: #ffe5ea;
+}
