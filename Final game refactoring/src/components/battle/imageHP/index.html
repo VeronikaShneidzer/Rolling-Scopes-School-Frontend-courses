@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Component</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<div class="content">
+		<h1>HP image.</h1>
+		<h2>What is it?</h2>
+		<p>
+			This component is a image of hp.
+		</p>
+		<h2>Where to use?</h2>
+		<p>
+			You can use it in your game to show living standard.
+		</p>
+		<h2>How to use?</h2>
+		<p>
+			First create in your site block:<br>
+			<code class="bigCode">
+				&ltdiv id="gameField"&gt&lt/div&gt
+			</code>
+			Then in index.js you find a function <code>drawHPImage(hp, coordinate, layer, trigger, maxHP)</code>. Use it in your site. <br>
+			hp - is hp of player/enemy, <br>
+			coordinate - is X coordinate, <br>
+			layer - is a layer for image, <br>
+			trigger - for left side of game field use 1, to right - 1, <br>
+			maxHP - is a maximum between player and enemy. <br>
+			This function return layer. <br>
+			ATTENTION! You need to use Konva for this component.
+		</p>
+		<h2>Example</h2>
+		<p>
+			<div id="gameField"></div>
+		</p>
+		<h2>Screenshots</h2>
+		<p class="screens">
+			<img src="./images/screen.png">
+		</p>
+	</div>
+</body>
+<script type="module" src="./index.js"></script>
+<script src="https://cdn.rawgit.com/konvajs/konva/2.1.7/konva.min.js"></script>
+</html>

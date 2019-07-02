@@ -1,0 +1,15 @@
+export { numberCounts } from "./numberCounts";
+export { sortNumbers } from "./sortNumbers";
+export { animalsIcons } from "./animalsIcons";
+export { progression } from "./progression";
+export { time } from "./time";
+export { capitals } from "./capitals";
+export { colorOfBlock } from "./colorOfBlock";
+export { geometry } from "./geometry";
+export { equation } from "./equation";
+export { interNumber } from "./interNumber";
+export { interWord } from "./interWord";
+export { numberSystems } from "./numberSystems";
+export { listeningWords } from "./listeningWords";
+export { dictionary } from "./dictionary";
+export { arithmetic } from "./arithmetic/index";

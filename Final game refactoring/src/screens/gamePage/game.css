@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	cursor: url("../cursor.cur"), auto;
+    font-family: "Times New Roman";
+    background-color: #000;
+}
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    display: none;
+}
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    color: #d1c184;
+    overflow: hidden;
+}
+
+.modal p {
+    width: 500px;
+    height: 109px;
+    background-size: cover;
+}
+
+.modal input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+    color: #d1c184;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    cursor: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+.startGameButton {
+    width: 80px;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.startGameButton:hover {
+    cursor: pointer;
+}
+
+.ageLimit {
+    width: 80px;
+    height: 80px;
+}
+
+.tableOfRecords {
+    display: none;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../../screens/tableOfRecords/images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 30px 0;
+    color: #4b0f0f;
+}
+
+.tableItem {
+    width: 680px;
+    height: 130px;
+    margin-bottom: 10px;
+    background-image: url(../../screens/tableOfRecords/images/item.png);
+    background-repeat: no-repeat;
+    color: #cbc6b8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tableItem img {
+    display: inline-block;
+    padding: 0 40px 0 25px;
+}
+
+.tableItem .name {
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Times New Roman";
+    width: 365px;
+    text-align: center;
+}
+
+.tableItem .count {
+    display: inline-block;
+    margin-left: 40px;
+    width: 80px;
+    text-align: center;
+}
+
+.investigateImg,
+.campImg {
+    height: 335px;
+    display: inline-block;
+}
+
+.campImg {
+    height: 340px;
+    display: inline-block;
+}
+
+.spellContent {
+    width: 620px;
+    height: 370px;
+    display: flex;
+    margin: 120px 20px 0 75px;
+}
+
+.modal .spells {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.modal .spells .spellItem {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.spellItem p {
+    width: 80px;
+    height: 16px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+.spellItem p.description {
+    height: 30px;
+}
+
+.taskModal .task {
+    position: relative;
+}
+
+h3 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.modal p.condition {
+    display: inline-block;
+}
+
+.taskContent {
+    margin: 110px 0 0 70px;
+    overflow: hidden;
+    display: flex;
+    width: 655px;
+    height: 310px;
+}
+
+.taskModal input.taskAnswer {
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    text-align: left;
+}
+
+.taskModal .taskButton {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 66px;
+    bottom: 51px;
+}
+
+.numberSystems {
+    width: 420px;
+}
+
+.numberSystems h3 {
+    height: 80px;
+}
+
+.numberSystems .condition,
+.time input.taskAnswer,
+.modal .arithmetic .condition {
+    width: 70px;
+}
+
+.interWord .condition,
+.interNumber .condition {
+    height: 20px;
+    width: 300px;
+}
+
+.equation .condition,
+.progression .condition,
+.sortNumbers .condition {
+    width: 100px;
+}
+
+.equation input.taskAnswer {
+    width: 70px;
+    text-align: center;
+}
+
+.geometry .condition {
+    height: 20px;
+    width: 330px;
+}
+
+.capitals .condition {
+    width: 400px;
+    height: 40px;
+}
+
+.animalsIcons h3,
+.sortNumbers h3 {
+    width: 410px;
+    height: 80px;
+}
+
+.animalsIcons .condition img {
+    height: 150px;
+}
+
+.dictionary .condition {
+    width: 120px;
+}
+
+.dragAndDrop .letter_container {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dragAndDrop .letterContainer .letterItem {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.listeningWords .condition {
+    height: 64px;
+}
+
+.listeningWords .condition img {
+    width: 64px;
+    height: 64px;
+}
