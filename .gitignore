@@ -1,0 +1,9 @@
+.vs/
+.code/
+.idea/
+.rpt2_cache/
+bin/
+obj/
+build/
+node_modules/
+package-lock.json
