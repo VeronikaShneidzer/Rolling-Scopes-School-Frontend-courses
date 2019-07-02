@@ -1,0 +1,753 @@
+@font-face {
+	font-family: "Gentium Book Basic"; 
+	src: url("../fonts/Gentium-Basic/GenBasB.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Lato"; 
+	src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Open Sans"; 
+	src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Yeseva One"; 
+	src: url("../fonts/yeseva-one/YesevaOne-Regular_v2.otf") format("opentype");
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1250px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.image-wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.block-about h2,
+.block-ingredients h2,
+.block-reviews h2,
+.block-reservations h2,
+.block-menu h2 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 36px;
+	font-weight: 400;
+	color: #fff;
+	padding: 76px 74px 0 74px;
+	max-height: 42px;
+  overflow: hidden;
+}
+
+.block-about .text-separator,
+.block-ingredients .text-separator,
+.block-reviews .text-separator,
+.block-reservations .text-separator,
+.block-menu .text-separator {
+	padding: 15px 0;
+}
+
+.content {
+	height: 100%;
+}
+
+header .vertical-alignment {
+	height: 120px;
+	line-height: 120px;
+	width: 100%;
+	overflow: hidden;
+}
+
+header {
+	height: 160px;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(50%, rgba(0, 0, 0, 0)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	font-size: 0px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+header .logo {
+	display: inline-block;
+	float: left;
+  width: 162px;
+  text-align: center;
+}
+
+header .logo img {
+	vertical-align: middle;
+}
+
+h1 {
+	display: none;
+	font-family: 'Yeseva One', cursive;
+	color: #fff;
+  font-size: 34px;
+  font-weight: 400;
+  float: left;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+}
+
+nav {
+	display: inline-block;
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 21px;
+	line-height: 117px;
+	float: right;
+	max-width: 772px;
+  overflow: hidden;
+}
+
+nav a {
+	color: #fff;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0px 21px;
+  letter-spacing: 1.8px;
+  margin-top: 3px;
+  -webkit-transition: 0.5px;
+  -o-transition: 0.5px;
+  transition: 0.5px;
+}
+
+nav a:hover {
+	border-top: 3px solid #fff;
+	margin-top: 0px;
+}
+
+header .social-links {
+	display: inline-block;
+	font-size: 19px;
+  max-width: 90px;
+  overflow: hidden;
+  float: right;
+  margin-right: 30px;
+}
+
+header .social-links a {
+	padding-right: 10px;
+	color: #dab33e;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+header .social-links a:hover {
+	color: #fff;
+}
+
+main {
+	min-height: calc(100vh - 320px);
+}
+
+main .block-promo {
+	background: #191919;
+	min-height: 750px;
+	height: 750px;
+}
+
+.block-promo .content {
+	height: 100%;
+	background: url('../images/bg-promo1.png') no-repeat;
+}
+
+.block-promo .content .wrapper {
+	height: calc(100% - 220px);
+	padding-top: 220px;
+}
+
+.block-promo section {
+	width: 1000px;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.block-promo section h2 {
+	font-family: 'Yeseva One', cursive;
+	color: #ffffff;
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 113px;
+}
+
+.block-promo img {
+	margin: 29px 0;
+}
+
+.block-promo .text-review {
+	width: 100%;
+	height: 80px;
+	max-height: 80px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.block-promo .button {
+	width: 226px;
+	height: 55px;
+	border: 1px solid #000000;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+  display: inline-block;
+}
+
+.block-promo .button a {
+	width: 100%;
+	font-size: 18px;
+	padding: 17px 0;
+	display: block;
+	color: #ffffff;
+}
+
+.block-promo .button:nth-child(2n) {
+	margin-left: 28px;
+}
+
+.block-promo .button:hover {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.block-promo .button:hover a {
+	color: #ffffff;
+}
+
+main .block-about {
+	min-height: 710px;
+	height: 710px;
+	background: url('../images/pattern-round.png') repeat;
+}
+
+.block-about .image-wrapper {
+	-webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	        box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	background: -webkit-linear-gradient(133deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	background: -o-linear-gradient(133deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	background: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+}
+
+.block-about .content .wrapper {
+	height: calc(100% - 50px);
+	padding: 25px 40px;
+}
+
+.block-about section {
+	height: 100%;
+	text-align: center;
+	width: 570px;
+	margin: 0 40px;
+	float: left;
+}
+
+.block-about .img-object {
+	float: right;
+	margin: 30px 0px 0 -85px;
+  position: absolute;
+}
+
+.block-about h2 {
+	color: #cc9900;
+}
+
+.block-about .text-review {
+	line-height: 45px;
+	letter-spacing: 1px;
+	padding: 0px 74px;
+	height: 400px;
+	max-height: 400px;
+  overflow: hidden;
+	color: #4c4c4c;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 5px;
+	letter-spacing: 0px;
+}
+
+.block-about .text-review p:first-child {
+	max-height: 170px;
+	height: 170px;
+	overflow: hidden;
+}
+
+.block-about .text-review p:last-child {
+	font-size: 0;
+		max-height: 255px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.block-about .text-review p:last-child img {
+	padding-left: 70px;
+}
+
+main .block-ingredients {
+	background: #191919;
+	min-height: 758px;
+	height: 758px;
+}
+
+.block-ingredients .content {
+	height: 100%;
+	background: url('../images/bg-ingredients1.png') no-repeat;
+}
+
+.block-ingredients .content .wrapper {
+	height: calc(100% - 200px);
+	padding: 100px 40px;
+}
+
+.block-ingredients section {
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.8;
+	text-align: center;
+	width: 570px;
+	margin: 0 40px;
+	float: right;
+}
+
+.block-ingredients .text-review {
+	line-height: 45px;
+	letter-spacing: 1px;
+	padding: 0px 74px;
+	height: 370px;
+	max-height: 370px;
+  overflow: hidden;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 5px;
+	letter-spacing: 0px;
+}
+
+.block-ingredients .text-review p:first-child {
+	max-height: 170px;
+	height: 170px;
+	overflow: hidden;
+}
+
+.block-ingredients .text-review p:last-child {
+	font-size: 0;
+		max-height: 158px;
+	overflow: hidden;
+}
+
+.block-ingredients .text-review p:last-child img {
+	display: inline-block;
+	border-radius: 100px;
+	border: 5px solid rgba(255, 255, 255, 0.09);
+	margin: 18px 15px;
+}
+
+main .block-menu {
+	min-height: 994px;
+	height: 994px;
+	background: url('../images/pattern-hexagone.png') repeat;
+}
+
+.block-menu .image-wrapper {
+	-webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	        box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	background: -webkit-linear-gradient(316deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	background: -o-linear-gradient(316deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+	background: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+}
+
+.block-menu .content .wrapper {
+	height: calc(100% - 50px);
+	padding: 25px 0;
+}
+
+.block-menu article {
+	width: 1055px;
+	margin: 0 auto;
+	height: calc(100% - 76px);
+	column-count: 2;
+	column-gap: 145px;
+	column-width: 455px;
+	column-rule: none;
+	font-size: 0;
+	padding-top: 76px;
+	overflow: hidden;
+}
+
+.block-menu section {
+	width: 455px;
+	display: inline-block;
+	font-size: 0;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.block-menu h2 {
+	color: #cc9900;
+	padding-top: 0;
+}
+
+.block-about .text-separator, .block-ingredients .text-separator, .block-reviews .text-separator, .block-reservations .text-separator, .block-menu .text-separator {
+	padding: 14px 0;
+}
+
+.menu-item {
+	height: 86px;
+	font-family: 'Lato', sans-serif;
+	color: #4c4c4c;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	padding: 0 10px;
+	margin-bottom: 12px;
+}
+
+.menu-item p {
+	width: 100%;
+	height: 31px;
+  padding: 13px 0 0 0;
+  overflow: hidden;
+}
+
+.menu-item span {
+	float: right;
+	max-width: 60px;
+	overflow: hidden;
+}
+
+.menu-item p:first-child {
+	font-family: 'Yeseva One', cursive;
+	color: #c89f2d;
+	font-size: 21px;
+	border-bottom: 1px solid #cc9900;
+	float: left;
+}
+
+.special {
+	border: 1px solid #c89f2d;
+}
+
+
+main .block-reviews {
+	background: #191919;
+	min-height: 758px;
+	height: 758px;
+}
+
+.block-reviews .content {
+	height: 100%;
+	background: url('../images/bg-reviews1.png') no-repeat;
+}
+
+.block-reviews .content .wrapper {
+	height: calc(100% - 200px);
+	padding: 100px 0;
+}
+
+.block-reviews section {
+	height: 100%;
+	width: 770px;
+	margin: 0 auto;
+	background-color: #000000;
+	opacity: 0.8;
+	text-align: center;
+	position: relative;
+}
+
+.block-reviews .text-review {
+	color: #dde0df;
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 45px;
+	letter-spacing: 1px;
+	padding: 0px 74px;
+	max-height: 380px;
+  overflow: hidden;
+}
+
+.block-reviews .text-review:before {
+	content: "“";
+	font-family: Georgia;
+	color: #f2f4f4;
+	font-size: 70px;
+	line-height: 0;
+	display: inline-block;
+	left: 30px;
+	top: 198px;
+	position: absolute;
+	opacity: 0.4;
+}
+
+.block-reviews .text-review p:first-child {
+	max-height: 275px;
+  overflow: hidden;
+}
+
+.block-reviews .text-review p:last-child {
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 20px;
+	max-height: 45px;
+  overflow: hidden;
+}
+
+main .block-reservations {
+	min-height: 710px;
+	height: 710px;
+	background: url('../images/pattern-round.png') repeat;
+}
+
+.block-reservations .image-wrapper {
+	-webkit-box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	        box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+	background: -webkit-linear-gradient(103deg, rgba(12, 52, 53, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+	background: -o-linear-gradient(103deg, rgba(12, 52, 53, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+	background: linear-gradient(-13deg, rgba(12, 52, 53, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+}
+
+.block-reservations .content .wrapper {
+	height: calc(100% - 50px);
+	padding: 25px 40px;
+}
+
+.block-reservations section {
+	height: 100%;
+	text-align: center;
+	width: 570px;
+	float: right;
+	margin-right: 20px;
+}
+
+.block-reservations .img-objects {
+	float: left;
+	margin: 75px 0 0 15px;
+}
+
+.block-reservations .img-objects img {
+	margin: 0 0 0 25px;
+}
+
+.block-reservations h2 {
+	color: #cc9900;
+	padding-top: 72px;
+}
+
+.block-reservations .text-review {
+	line-height: 45px;
+	letter-spacing: 1px;
+	padding: 0px 70px;
+	height: 450px;
+	max-height: 450px;
+  overflow: hidden;
+	color: #4c4c4c;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding-top: 5px;
+	letter-spacing: 0px;
+}
+
+.block-reservations .form-description {
+	max-height: 170px;
+	height: 170px;
+	overflow: hidden;
+}
+
+.block-reservations .form-description p {
+	margin-top: 10px;
+}
+
+.block-reservations .form-description p:first-child {
+	margin-top: 0;
+}
+
+form {
+	font-size: 0px;
+	text-align: left;
+	margin-top: 20px;
+}
+
+form p {
+	width: 200px;
+	height: 85px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+form p:nth-child(2n) {
+	margin-left: 30px;
+}
+
+form label {
+	color: #c9a131;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	letter-spacing: 0.5px;
+	margin-bottom: 3px;
+}
+
+form input,
+form select {
+	color: #7c7c7c;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 16px;
+  border: 1px solid #c8c6c6;
+  padding: 6px 0 6px 16px;
+  width: 182px;
+}
+
+form input:focus,
+form select:focus {
+	border: 1px solid #c89f2d;
+}
+
+form select {
+	background: #fff;
+}
+
+form p:last-child {
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	color: #ffffff;
+	width: 200px;
+	background-color: #c89f2d;
+	border: none;
+	font-style: normal;
+	padding: 6px 0;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+input[type="submit"]:hover {
+	background-color: #d3b256;
+}
+
+input[type="submit"]:focus {
+	border: none;
+}
+
+footer {
+	background: #191919;
+	height: 320px;
+	color: #fff;
+	text-align: center;
+	font-size: 0;
+	overflow: hidden;
+}
+
+footer section {
+	max-width: 345px;
+	max-height: 187px;
+	width: 345px;
+	height: 187px;
+	display: inline-block;
+	margin: 59px 6px 59px 50px;
+	float: left;
+}
+
+footer .text-separator {
+	width: 199px;
+	margin: 18px 0;
+}
+
+footer h3 {
+	font-size: 21px;
+	color: #fefefe;
+	font-family: 'Yeseva One', cursive;
+	height: 20px;
+	line-height: 21px;
+	max-height: 20px;
+	overflow: hidden;
+	font-weight: 400;
+}
+
+footer .description {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 24px;
+	max-height: 120px;
+	overflow: hidden;
+}
+
+footer .adress {
+	letter-spacing: 0.5px;
+}
+
+footer .payments-cards,
+footer .social-icons {
+	margin: 45px 0 0 0;
+}
+
+footer .payments-cards i,
+footer .social-icons i {
+	padding: 0 5px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	color: #ffffff;
+}
+
+footer .payments-cards a:hover i,
+footer .social-icons a:hover i {
+	color: #c9a131;
+}
