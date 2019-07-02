@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Europe";
+    src: url("../fonts/Europe.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Good Vibes";
+    src: url("../fonts/GoodVibesCyr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	background-color: #2a363b;
+}
+
+main {
+	height: calc(100vh);
+	font-family: 'Europe', sans-serif;
+	color: #fff;
+}
+
+h1 {
+	font-family: 'Good Vibes', sans-serif;
+	font-size: 60px;
+	line-height: 120px;
+	text-align: center;
+	font-weight: normal;
+}
+
+form {
+	font-size: 0;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+label {
+	display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    width: 30%;
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+    transition: 1s;
+}
+
+label:hover {
+	background-color: #74174d;
+}
+
+form input {
+	display: none;
+}
+
+table {
+	margin: 0 auto;
+	min-width: 60%;
+	margin-bottom: 40px;
+}
+
+td, th {
+	border: 1px solid black;
+}
+
+th {
+	font-size: 16px;
+	line-height: 26px;
+	height: 26px;
+	padding: 0 5px;
+}
+
+td {
+	text-align: right;
+	line-height: 24px;
+	height: 24px;
+	font-size: 20px;
+    padding-right: 5px;
+    font-family: 'Good Vibes', sans-serif;
+    font-weight: bold;
+}
+
+td:first-child,
+td:last-child {
+	text-align: center;
+	font-family: 'Europe', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+tr:nth-child(12n) {
+	background-color: #a8e6ce;
+}
+
+tr:nth-child(12n+1),
+tr:nth-child(12n+11) {
+	background-color: #99b898;
+}
+
+tr:nth-child(12n+2),
+tr:nth-child(12n+10) {
+	background-color: #fecea8;
+}
+
+tr:nth-child(12n+3),
+tr:nth-child(12n+9) {
+	background-color: #ff847c;
+}
+
+tr:nth-child(12n+4),
+tr:nth-child(12n+8) {
+	background-color: #e84a5f;
+}
+
+tr:nth-child(12n+5),
+tr:nth-child(12n+7) {
+	background-color: #cc5a7a;
+}
+
+tr:nth-child(12n+6) {
+	background-color: #a7226e;
+}
+
+
+canvas {
+	display: none;
+	width: 100%;
+}
+
+h1 {
+
+}

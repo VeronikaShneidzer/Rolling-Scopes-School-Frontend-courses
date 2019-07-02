@@ -1,0 +1,30 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "rss epam youtube task",
+  "main": "index.html",
+  "scripts": {
+    "watch": "webpack -w --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikaNeider"
+  },
+  "author": "Veronika Shneider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikaNeider"
+  },
+  "homepage": "https://github.com/NikaNeider",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "eslint": "^3.19.0",
+    "lodash": "^4.17.10",
+    "webpack": "^2.7.0"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "webpack-build": "^1.0.1"
+  }
+}
