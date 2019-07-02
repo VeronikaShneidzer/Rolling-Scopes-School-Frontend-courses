@@ -1,0 +1,905 @@
+Выберите последние утвержденные спецификации html и css.
+HTML 5, CSS 4
+HTML 4, CSS 3
++HTML 5, CSS 3
+HTML 3, CSS 5
+
+Что из перечисленного не является браузером?
+Mozilla Firefox
+Internet Explorer
+Microsoft Edge
+Google Chrome
+Safari
++Webpack
+
+Какое свойство определяет отступы между элементами?
++ padding
+margin
+border
+
+Какое свойство определяет свойства границы элемента?
+margin
+border
++ padding
+
+Как задать комментарий в HTML?
+/* Comment */
+// Comment
++ <!-- Comment -->
+" Comment "
+
+Какой из элементов имеет наибольший шрифт по умолчанию?
+h0
+h2
+h4
++ h1
+
+Что из перечисленного является правильным doctype для HTML5?
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd">
+<!DOCTYPE>
++ <!DOCTYPE html>
+<!DOCTYPE HTML5>
+
+Как сделать шрифт жирным?
+style:bold;
++ font-weight:bold;
+font-bold:apply;
+
+С помощью какого тега задается маркированный список?
+<dl>
++ <ol>
+<list>
+<ul>
+
+Что из перечисленного является правильным синтаксисом CSS?
++ div {color: red;}
+{div:color=red;}
+div:color=red;
+{div;color:red;}
+
+Как выбрать элемент с id "test" в CSS?
++ .test
+test
+#test
+
+* Внутри каких тегов располагается <meta charset="UTF-8"> ?
+main
+html
+header
+body
++ head
+
+Выберите парные теги.
++article
++a
+input
+img
++div
+
+Выберите одиночные теги.
+title
+meta
+br
+input
+img
+
+* Какие элементы выделяют текст не только физически, но и логически?
++em
++strong
+b
+i
+
+Какая из записей ссылки является верной?
+<a src="http://www.test.com">epam</a>
+<a url="http://www.test.com">epam</a>
+<a>http://www.test.com</a>
++ <a href="http://www.test.com">epam</a>
+
+Каким способом подключается внешний файл CSS?
+<stylesheet>style.css</stylesheet>
+<style src="style.css"></style>
++ <link rel="stylesheet" type="text/css" href="style.css">
+<script src="style.css"></script>
+
+Как указать на <div> с классом "wrapper"?
++div[class="wrapper"]
+div .wrapper
+div, wrapper
++ div.wrapper
+
+В каком теге задается описание к <figure> ?
+<description>
+<caption>
+<overview>
++ <figcaption>
+
+В каких тегах data атрибуты валидны?
++<div data-height="182"><div>
+<div dataHeight="182"><div>
++ <div data-height=182px><div>
+<div data height="182"><div>
+
+Какие элементы относятся к табличным и располагается внутри <table> ?
++tbody
++ tr
+div
+theader
++td
+header
+
+Какая из записей <img> является верной и валидной?
++ <img src="image.png" alt="Image">
+<img alt="Image">image.png</img>
+<img src="image.png" title="image">
+<img src="image.png">
+
+* Какие теги могут быть ТОЛЬКО в <head>?
++ link
+span
++ title
+script
++ meta
+
+* Какие теги могут быть ТОЛЬКО в <body>?
+script
++ div
++ span
+meta
+link
+
+Что из перечисленного является псевдоклассами?
++ hover
+after
++ first-child
+before
++ only-child
+
+Что из перечисленного является псевдоэлементами?
+hover
+first-child
++ after
++ before
++ first-letter
+
+Что из перечисленного является абсолютными величинами?
++ pt
+px
+%
+em
++ mm
+
+Что из перечисленного является относительными величинами?
+in
+mm
++ %
++ px
++ em
+
+Что является корректным HTML для создания radio button?
+<radiobutton>click</radiobutton>
+<radio>click</radio>
+<input type="radiobutton">
++ <input type="radio">
+
+* Сколько ячеек в длину занимает последний в таблице элемент <tr>?
+<table style="width: 100%">
+  <tr>
+    <th>X</th>
+    <th>X</th>
+    <th>X</th>
+  </tr>
+  <tr>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+</table>
+4
+1
++ 3
+2
+
+* Как правильно применить свойство для стиля background в html5?
+<background>red</background>
++ <body style="background:red;">
+<body style="{background:red;}">
+<body bgcolor="red">
+
+* Какие из утверждений верны?
+Строчные элементы занимают всю ширину экрана или родительского элемента
++ Строчные элементы занимают лишь ширину контента
++ Блочные элементы начинаются с новой строки
+Код с блочными элементами внутри строчных пройдет валидацию
++ Код со строчными элементами внутри строчных пройдет валидацию
+
+* Какой записью можно поменять background-color у всех элементов <h2>, и только у них?
++ body h2 {background-color:#FFFFFF;}
+body.h2 {background-color:#FFFFFF;}
+* {background-color:#FFFFFF;}
++ h2 {background-color:#FFFFFF;}
+h2 h2 {background-color:#FFFFFF;}
+
+* Как правильно записать общее свойство?
+margin-top: 20px;
+margin-left: 10px;
+margin-right: 5px;
+margin-bottom: 10px;
+
+margin: 5px 10px 20px 10px;
++ argin: 20px 10px 5px 10px;
+margin: 5px 10px 20px;
+margin: 10px 10px 20px 5px;
++ margin: 20px 10px 5px;
+
+* Как в структуре <ul> <li> <span>111</span> <span>222</span> </li> </ul> выбрать только второй span?
++ ul li span + span
+ul span, span
+ul li + span
+ul li > span
+ul li span * 2
+
+* Что из перечисленного является правильной записью цвета?
++ rgba(255, 255, 255, 0.5)
++ hsl(0, 100%, 50%)
+rgb(355, 344, FA2)
+#MLG322
++ #FED444
++ rgb(255, 255, 255)
+rgb(355, 344, FA2)
+rgba(255, 355, 255, 0.5)
++ #ABC
+
+* Как правильно задать свойство фона с картинкой?
+background-image: src("image.jpg");
++ background-image: url("image.jpg");
+image("image.jpg")
++ background: url("image.jpg");
+background: image("image.jpg");
+
+* В каких <input> placeholder задан правильно?
++ <input type="text" name="random" placeholder="Random text">
++ <input type="email" placeholder="Random email">
+<input type="submit" value="Submit">
+<input type="tel" holder="Random tel">
+<input type="checkbox" placeholder="Check it">
+
+** Что из перечисленного не пройдет валидацию в html5?
+<input data-value = "8 марта" required>
++ <img srcset="medium.jpg 1000w, large.jpg 2000w" alt="picture">
+<img src="img" alt="pic">
++ <div><span><p>text</p></span><div>
++ <input type="checkbox" value="validate data" disable>
+
+Какой браузер больше не поддерживается?
++ Internet Explorer 10
+Google Chrome
+Microsoft Edge
+Mozilla Firefox
+
+Выберите несуществующий тег.
+article
+a
+header
++ paragraph
+div
+
+Какой курсор подсказывает пользователю, что на кнопку можно нажать?
+cursor: grab;
+cursor: copy;
+cursor: help;
++ cursor: pointer;
+
+Каким свойством центрируется контейнер по горизонтали?
+padding: 0;
++ margin: 0 auto;
+margin: 0;
+margin: 100%;
+
+В выражении padding: 40px 20px 32px 16px, чему равен padding-bottom?
+20px
++ 32px
+16px
+40px
+
+Через какое свойство можно определить цвет заднего фона?
+color
+background-rgb
++ background-color
+rgb-color
+
+Как можно сделать шрифт жирным?
++ font-weight: 700;
+font-weight: 100;
+font-weight: 400;
++ font-weight: bold;
+
+Какие теги могут быть в <head>?
+div
++ script
++ title
+section
++ meta
+
+Какие теги могут быть в <body>?
++ footer
+meta
++ script
+link
++ header
+
+* Как сместить изображение заданное через CSS внутри контейнера на 32 пикселя ВЛЕВО?
+background-position: 0px -32px;
+background-position-x: 32px;
++ background-position-x: -32px;
++ background-position: -32px 0px;
+
+* Что в таблице сделает выражение <td colspan="2"></td>?
++ Займет 2 ячейки горизонтально, если в таблице есть строка с двумя и более ячейками
+Займет 2 ячейки вертикально в любом случае
+Займет 2 ячейки вертикально, если в таблице есть 2 и более столбцов с ячейками
+Займет 2 ячейки горизонтально в любом случае
+
+Какие свойства не дадут вам увидеть контент?
++ opacity: 0;
+content: "hidden";
++ visibility: hidden;
+overflow: hidden;
+
+Какие из утверждений верны по умолчанию?
+Строчные элементы, следуя друг за другом, начинаются с новой строки.
++ Блочные элементы растягиваются на всю ширину родителя, или окна.
++ Блочные элементы могут содержать строчные.
++ Строчные элементы занимают ширину конетента.
+Строчные элементы могут содержать блочные.
+
+Есть картинка 600х600 пикселей. Мы задали ее с помощью <img>. У <img> свойствами определили размер, width: 100px; height: 200px;. Как отобразится картинка?
+Останется квадратной, и примет размер 100х100
+Останется исходного размера 600х600, будучи частично обрезанной
++ Растянется под заданные размеры
+Останется квадратной, и примет размер 200х200, будучи частично обрезанной
+
+Как в структуре <ul class="list"> <li> <ul> <li> </li> </ul> </li> </ul> выбрать все li?
+.list > li
++ .list li
+.list + li
+.list ul li
+
+* Какие элементы должны ОБЯЗАТЕЛЬНО присутствовать в html документе?
++ doctype
++ html
+footer
++ head
+header
++ body
+
+* Какие записи верно указывают на <div> c атрибутом id?
++ div[id="container"]
+.container
+id=container
+id.container
++ #container
+
+* Что из перечисленного является НЕправильной записью цвета?
+rgba(155, 155, 155, 0.5)
++ hsl(0, 100%, 500%)
++ #FFF255FFF
++ rgb(666, 245, 5)
+#F15
+
+* Как сделать так, чтобы при открытии формы, фокусировка сразу попала на <input> ?
+<input type="text" select>
+<input type="text" preselect>
++ <input type="text" autofocus>
+<input type="text" focus>
+
+** Что из перечисленного не пройдет валидацию в html5 (если поместить это внутрь <body></body>)?
++ <textarea cols="200" rows="10">
+<p id="is.all.good.or.bad" class="black red white"></p>
+<input required>
++ <fieldset><input></fieldset><legend></legend>
+<img src="image.gif" alt="gif" onerror="func()">
+
+1. Какие из перечисленных тегов, появились в спецификации HTML5:
+<title>
++ <nav> 
+<button>
++ <time>
++ <figure>
++ <article>
+<form>
+ 
+2. img - это:
++ непарный тег с обязательным атрибутами src и alt
+непарный тег с обязательным атрибутами href и alt
+непарный тег с обязательным атрибутами href и alter
+парный тег с обязательным атрибутами src и alt
+парный тег с обязательным атрибутами href и alt
+
+3. Что из перечисленного записано правильно:
+<a src="index"/>
++ <a href="index">html</a>
+<a src="index">html</a>
+<a link="index">html</a>
+<a href "index">html</a>
+ 
+4. Где правильно описаны data атрибуты?
++ <div data-cost=100500>
+<div dataCost="100500">
++ <div data-cost-high="100500">
+<div data-cost "100500">
+<div cost-data="100500">
+
+5. Какие из этих элементов этносятся к элементам таблицы и записаны правильно?
++ <table>
+<head>
++ <tbody>
++ <th>
++ <td colspan="2">
+<tr colspan="2">
+ 
+6. Какие из элементов должны распологаться только в <head>?
+<header>
++ <link>
++ <meta>
+<div>
+<script>
+ 
+7. Какие из утверждений верны?
++ Блочные элементы занимают всю ширину экрана
++ Строчные элементы занимают ширину контента
+К строчным элементам можно применить свойство width
++ Блочные элементы начинаются с новой строки
+Блочные элементы могут быть встроены в строчные элементы
++ К блочным элементам можно применить свойство height
+
+
+8. Что является корректным HTML для создания radio button?
+<radio>
+<radiobutton>
+<input type="radio-button">
+<input type="radiobutton">
++ <input type="radio">
+ 
+9. HTML комментарии для актуальных браузеров написаны правильно:
+/* comment */
+<comment> comment </comment>
+<! comment >
++ <!-- comment -->
+ 
+10. Что из перечисленного является правильным doctype для HTML5?
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd">
++ <!DOCTYPE html>
+<!DOCTYPE HTML5>
+<!DOCTYPE html4.01>
+
+11. Сколько будет ячеек в таблице, выделенных свойством border?
+td, th {
+  border: 1px solid green;
+}
+<table style="width: 100%">
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr></tr>
+</table>
+3
+4
++ 5
+6
+ 
+12. С помощью каких конструкций можно использовать стили на странице:
++ <link rel="stylesheet" href="IEOneLove.css">
++ <style></style>
++ <img style="width:500px;">
+ 
+13. Какой записью можно поменять background-color у всех элементов <h1>?
++ h1 {background-color:#FFF;}
+h1 {bgcolor:#FFF;}
+h1.all {background-color:#FFF;}
+all h1 {background-color:#FFF;}
+
+14. Каким селектором можно выбрать элементы, выделенные красным
+<ul>
+  <li>1</li>
+  <li>2 - выбран</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5 - выбран</li>
+  <li>6</li>
+</ul>
+ul~li:nth-child(3n)
++ ul>li:nth-child(3n+2)
+ul li:first-child, ul li:last-child
+ul li+li
+ 
+15. Какого цвета будет текст "TEXT" внутри тега <span>, если соблюдать порядок записи CSS?
+div span { color: green; }
+.one span { color: red; }
+span.two { color: blue; }
+#divId { color: yellow; }
+red
++ blue
+yellow
+green
+ 
+16. Как правильно записать общее свойство:
+margin-top: 10px;
+margin-left: 15px;
+margin-right: 15px;
+margin-bottom: 10px;
+
+margin: 15px 10px 10px 15px;
+margin: 10px 15px 15px 10px;
+margin: 15px 10px;
++ margin: 10px 15px;
+ 
+17. Что из перечисленного является псевдоклассами?
+:first-letter
++ :hover
+:before
++ :first-child
++ :only-child
+:after
+ 
+18. Что из перечисленного является относительными величинами?
++ vw
++ %
+px
+pt
++ em
++ ex
++ px
++ %
++ rem
+ 
+1. Кто разрабатывает веб стандарты?
+Microsoft
+Mozilla
++ The World Wide Web Consortium (W3C)
+Google
+ 
+2. Текущая спецификация HTML:
+HTML 3
+HTML 4
++ HTML 5
+HTML 6
+
+3. К парным тегам относятся:
+br
++ a
+img
++ div
++ span
+ 
+4. К непарным тегам относятся:
++ br
++ meta
++ img
+div
+span
+
+5. Какой из перечисленных элементов покажет наибольший размер текста:
+<h6>
+<header>
+<h3>
++ <h2>
+ 
+6. Как правильно применить свойство для стиля background в html?
+<background>yellow</background>
++ <body style="background-color:yellow;">
+<body bg="yellow">
+ 
+7. Каким html элементом выделяется текст высокой важности?
+<important>
+<b>
+<i>
++ <strong>
+
+8. Что из перечисленного является правильной ссылкой
+<a>http://www.epam.com</a>
+<a url="http://www.epam.com">epam</a>
+<a name="http://www.epam.com">epam</a>
++ <a href="http://www.epam.com">epam</a>
+ 
+9. Какой символ говорит о закрытии тега?
++ /
+-
+*
+^
+ 
+10. Где правильно описаны data атрибуты?
++ <li data-weight="45">
+<li dataWeight="45">
++ <li data-weight=45kg>
+<li data weight=45>
+
+11. С помощью какого тега будет сделан нумерованный список?
+<list>
+<ul>
+<dl>
++ <ol>
+ 
+12. С помощью какого тега будет сделан маркированный список?
+<list>
++ <ul>
+<dl>
+<ol>
+ 
+13. Какие из этих элементов являются <table> элементами?
+<table><head><tfoot>
+<thead><body><tr>
++ <table><tr><td>
+<table><tr><tt>
+
+14. Что из элементов должно распологаться в <head>?
++ <title>
++ <link>
+<p>
+<header>
++ <meta>
+<table>
+ 
+15. Что из элементов должно распологаться в <body>?
+<title>
++ <section>
++ <header>
++ <p>
++ <a>
+<link>
+ 
+16. Строчные элементы по умолчанию:
+Занимают всю ширину экрана
++ Занимают ширину контента
+Начинаются с новой строки
++ Начинаются от конца предыдущего элемента
++ Могут быть встроены в блочные элементы
+ 
+17. Блочные элементы по умолчанию:
++ Занимают всю ширину экрана
+Занимают ширину контента
++ Начинаются с новой строки
+Начинаются от конца предыдущего элемента
+Могут быть встроены в строчные элементы
+ 
+18. Что является корректным HTML для создания checkbox?
+<checkbox>
+<check>
++ <input type="checkbox">
+<input type="check">
+ 
+19. Что является корректным HTML для создания поля ввода текста?
++ <input type="text">
+<textfield>
+<textinput type="text">
+<input type="textfield">
+ 
+20. Комментарии в HTML начинаются с:
++ <!--
+<-
+/*
+//
+ 
+21. Валидный HTML для картинок:
+<image src="image.gif" alt="MyImage">
+<img alt="MyImage">image.gif</img>
++ <img src="image.gif" alt="MyImage"/>
+<img href="image.gif" alt="MyImage">
+ 
+22. Какие из перечисленный элементов могут использоваться только один раз на странице?
+<form>
++ <header>
++ <main>
+<canvas>
++ <h1>
+<section>
+ 
+23. Что из перечисленного является правильным doctype для HTML5?
+Option 1
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd">
+<!DOCTYPE HTML5>
++ <!DOCTYPE html>
+ 
+24. Какой элемент используется для обозначения "подвала" страницы?
+<section>
+<bottom>
++ <footer>
+<main>
+
+25. Какой элемент используется для обозначения видимого "заголовка" страницы?
+<head>
++ <header>
+<h1>
+<main>
+<section>
+
+26. Для чего используется <canvas>:
+манипулирование данных в MySQL
++ рисование графики
+создание переносимых элементов
+ 
+27. Какой вид ссылки является валидным?
+<a h-ref="www.google.com">Google<a>
+<a "href:www.google.com">Google</a>
+<a href="www.google.com" />Google
++ <a href="www.google.com">Google</a>
+
+28. Сколько ячеек в таблице?
+<table>
+  <tr>
+    <td>One.a</td>
+    <td>One.b</td>
+  </tr>
+  <td>Two</td>
+  <tr>
+    <td>Three</td>
+  </tr>
+  <tr></tr>
+</table>
++ 4
+5
+6
+7
+
+29. Какой будет видимый размер таблицы (ширина и высота в ячейках)?
+<table>
+  <tr>
+    <td>One.a</td>
+    <td>One.b</td>
+  </tr>
+  <td>Two</td>
+  <tr>
+    <td>Three</td>
+  </tr>
+  <tr></tr>
+</table>
+3х4
++ 2х3
+2х2
+1х4
+
+30. <p> Hello world! <p> - Какая цель использования именно такого тега?
++ Позволяет стилизовать текст
+Текст будет невидимым
+Убирает возможность вносить изменения в разметку
+Потому что мы не можем распологать текст вне тегов
+ 
+31. Что из перечисленного является правильным синтаксисом CSS?
+{body;color:black;}
+body:color=black;
++ body {color: black;}
+{body:color=black;}
+ 
+32. Какой записью правильно подключается внешний файл CSS?
++ <link rel="stylesheet" type="text/css" href="style.css">
+<stylesheet>style.css</stylesheet>
+<style src="style.css">
+ 
+33. В какой части HTML документа нужно подключаться внешний файл CSS?
++ В секции <head>
+В конце докумета
+В секции <body>
+ 
+34. Какой записью можно поменять background-color у всех элементов <h1>?
+all.h1 {background-color:#FFFFFF;}
++ h1 {background-color:#FFFFFF;}
+h1.all {background-color:#FFFFFF;}
+ 
+35. Как выбрать элемент с id "demo"?
+.demo
+*demo
++ #demo
+demo
+ 
+36. Как выбрать элемент с классом "test"?
++ .test
+test
+*test
+#test
+ 
+37. Как выбрать все элементы p внутри элемента div?
+div.p
++ div p
+div + p
+div, p
+
+38. Как правильно записать общее свойство:
+top border = 10px
+bottom border = 5px
+left border = 20
+right border = 1
+border-width:5px 20px 10px 1px;
++ border-width:10px 1px 5px 20px;
+border-width:10px 20px 5px 1px;
+border-width:10px 5px 20px 1px;
+ 
+39. Как сделать отображение ссылок <a> без подчеркивания?
+a {decoration:no-underline;}
+a {text-decoration:no-underline;}
+a {underline:none;}
++ a {text-decoration:none;}
+ 
+40. Как сделать шрифт жирным?
+font-bold:apply;
++ font-weight:bold;
+style:bold;
+ 
+41. Какой конструкцией выбрать только второй <span>?
+<ul>
+  <li><p><span>SPAN 1</span></p></li>
+  <li><span>SPAN 2</span></li>
+</ul>
+<span>SPAN 3</span>
++ ul li > span
+ul li span
+ul, li, span
+ul+li span
+ 
+42. Что из перечисленного является псевдоклассами?
++ hover
+before
+after
++ first-child
++ only-child
+
+43. Что из перечисленного является псевдоэлементами?
+hover
++ before
++ after
+first-child
++ first-letter
+
+44. Что из перечисленного является абсолютными величинами?
+em
+px
+%
++ pt, pc, mm, cm, in
+rem
+ 
+45. Что из перечисленного является относительными величинами?
++ em
++ ex
++ px
++ %
++ rem
+mm
+ 
+46. Каким свойством можно увеличить расстояние между буквами?
+text-align
+word-spacing
++ letter-spacing
+ 
+47. Что из перечисленного является правильной записью цвета?
++ rgb(255, 255, 255)
+rgb(355, 344, FA2)
+rgba(255, 255, 255, 0.5)
+#FED444
+#MLG332
+ 
+48. Как правильно задать свойство фона с картинкой:
++ background-image: url("image.jpg");
+background-image: src("image.jpg");
+background: image("image.jpg");
+ 
+49. Какое свойство определяет отступы между элементами?
++ margin
+border
+padding
+ 
+50. Какое свойство определяет расстояние от контекста (текста) до границы элемента?
+margin
+border
++ padding
+
+
+
+
