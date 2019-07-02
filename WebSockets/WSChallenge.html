@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+		var ws = new WebSocket("ws://wsc.2123.io/");
+		ws.binaryType = "arraybuffer";
+		ws.onopen = function() {
+			ws.send(JSON.stringify({"name":"Nika Neider", "command": "challenge accepted"}));
+		}
+		ws.onmessage = function(e) {
+			console.log(e.data);
+		}
+
+		ws.send(JSON.stringify({ token: "9dc62fbb011b099c", command: "arithmetic" }));
+
+		ws.send(JSON.stringify({ "token": "9dc62fbb011b099c", "command": "arithmetic", "answer": -129}));
+
+		ws.send(JSON.stringify({ token: "9dc62fbb011b099c", command: "binary_arithmetic" }));
+
+		ws.onmessage = function(data) {
+			console.log(data);
+			var view = new Uint16Array(data.data);
+			var result = view.reduce(function(sum, current) {
+						return sum + current;
+				}, 0);
+			console.log(result);
+		}
+
+		ws.send(JSON.stringify({ "token": "9dc62fbb011b099c", "command": "binary_arithmetic", "answer": 214038}));
+
+		ws.send(JSON.stringify({ "token": "9dc62fbb011b099c", command: "win" }));
+
+		MessageEvent {isTrusted: true, data: "{"secretCode":"0650832fbe86c465"}", origin: "ws://wsc.2123.io", lastEventId: "", source: null, …}
+	</script>
+</body>
+</html>
