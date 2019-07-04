@@ -1,0 +1,31 @@
+.card {
+  margin: 10px;
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.back,
+.front {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.solved {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  visibility: hidden;
+}

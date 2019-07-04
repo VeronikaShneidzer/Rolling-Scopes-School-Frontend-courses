@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Europe";
+  src: url("./fonts/Europe.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Goodvibes";
+  src: url("./fonts/Goodvibes.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+main {
+  font-family: 'Europe';
+  min-height: calc(100vh);
+  display: flex;
+  color: #213435;
+}
